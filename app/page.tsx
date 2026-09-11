@@ -108,8 +108,8 @@ function Hero() {
           {SITE.address}
         </div>
         <h1 className="max-w-[17ch] text-[clamp(2.75rem,7.5vw,5.5rem)] font-semibold leading-[1.0] tracking-[-0.04em] text-ink [text-shadow:0_2px_28px_rgba(0,0,0,0.5)]">
-          Estándar de exigencia.{" "}
-          <span className="text-red-hi">Todos los días.</span>
+          Lujo.{" "}
+          <span className="text-red-hi">Sin vueltas.</span>
         </h1>
         <p className="mt-7 max-w-[50ch] text-[17px] leading-relaxed text-ink-dim [text-shadow:0_1px_12px_rgba(0,0,0,0.7)] sm:text-[19px]">
           Una selección exclusiva de usados en Punta del Este. Cada unidad elegida y

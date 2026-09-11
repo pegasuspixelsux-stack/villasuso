@@ -7,9 +7,9 @@ export const SITE = {
   legalName: "Automotora Gonzalo Villasuso",
   city: "Punta del Este",
   region: "Punta del Este, Uruguay",
-  tagline: "Vehículos seleccionados BMW, Land Rover, Jaguar y MINI.",
+  tagline: "Vehículos seleccionados BMW, MINI y Mazda.",
 
-  brands: ["BMW", "Land Rover", "Jaguar", "MINI"] as string[],
+  brands: ["BMW", "MINI", "Mazda"] as string[],
 
   whatsappNumber: "59894438600",
   phoneDisplay: "094 438 600",

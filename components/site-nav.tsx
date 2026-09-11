@@ -4,9 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { Wordmark } from "./wordmark";
-import { WhatsappCaptureButton } from "./whatsapp-capture-button";
 import { SocialLinks } from "./social-links";
-import { NAV_LINKS } from "@/lib/site";
+import { NAV_LINKS, SITE } from "@/lib/site";
 
 /** Sticky site header — shared by the homepage and every route (e.g. vehicle detail pages). */
 export function Nav() {
@@ -41,14 +40,20 @@ export function Nav() {
             className="hidden size-9 items-center justify-center rounded-full bg-surface text-ink-dim transition-colors hover:bg-surface-hi hover:text-ink sm:grid"
             iconSize={16}
           />
-          <WhatsappCaptureButton
-            buildMessage={(name, phone) =>
-              `Hola Gonzalo Villasuso, mi nombre es ${name} (Tel: ${phone}) y quería hacer una consulta.`
-            }
-            source="Nav"
-            buttonLabel="WhatsApp"
-            buttonClassName="inline-flex items-center gap-2 rounded-full bg-red px-4 py-2 text-[13px] font-semibold text-white transition-colors hover:bg-red-hi"
-          />
+          {/* TODO: swap for real manufacturer logo files once supplied — text badges are a placeholder */}
+          <div
+            aria-label={`Marcas: ${SITE.brands.join(", ")}`}
+            className="hidden items-center gap-2 sm:flex"
+          >
+            {SITE.brands.map((brand) => (
+              <span
+                key={brand}
+                className="rounded-full bg-surface px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.08em] text-ink-dim"
+              >
+                {brand}
+              </span>
+            ))}
+          </div>
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}

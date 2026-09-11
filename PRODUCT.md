@@ -16,7 +16,7 @@ Interface language is Uruguayan Spanish.
 
 ## Product Purpose
 
-A lead-generation website for Gonzalo Villasuso, an automotora offering selected BMW, Land Rover, Jaguar and MINI vehicles, plus a reusable Instagram feed-post graphic template that matches it. The website presents current inventory and turns interested visitors into direct contact — WhatsApp message, phone call, or enquiry form — tied to a specific vehicle where possible. The Instagram template is a standing blueprint the dealership reuses to post individual vehicles to social, where most traffic originates. Success is measured in qualified enquiries reaching the sales team, not on-site transactions.
+A lead-generation website for Gonzalo Villasuso, an automotora offering selected BMW, MINI and Mazda vehicles, plus a reusable Instagram feed-post graphic template that matches it. The website presents current inventory and turns interested visitors into direct contact — WhatsApp message, phone call, or enquiry form — tied to a specific vehicle where possible. The Instagram template is a standing blueprint the dealership reuses to post individual vehicles to social, where most traffic originates. Success is measured in qualified enquiries reaching the sales team, not on-site transactions.
 
 ## Deliverable Surfaces
 
@@ -25,7 +25,7 @@ A lead-generation website for Gonzalo Villasuso, an automotora offering selected
 
 ## Positioning
 
-Automotora in Punta del Este offering selected vehicles from four marques — BMW, Land Rover, Jaguar and MINI — rather than an all-makes inventory. Whether this is a manufacturer-authorized dealership or an independent seller specializing in these brands is **undecided** and must be confirmed before the copy claims either. Any sharper positioning claim (guarantees, years in business, reputation markers) is likewise **undecided** and must not be invented.
+Automotora in Punta del Este offering selected vehicles from three marques — BMW, MINI and Mazda — rather than an all-makes inventory. Whether this is a manufacturer-authorized dealership or an independent seller specializing in these brands is **undecided** and must be confirmed before the copy claims either. Any sharper positioning claim (guarantees, years in business, reputation markers) is likewise **undecided** and must not be invented.
 
 ## Operating Context
 
@@ -47,7 +47,7 @@ Confirmed scope:
 - Instagram feed-post template as a standalone deliverable surface (see Deliverable Surfaces).
 
 Explicitly undecided (do not fabricate):
-- Whether this is a manufacturer-authorized dealership for BMW / Land Rover / Jaguar / MINI, or an independent seller of those makes.
+- Whether this is a manufacturer-authorized dealership for BMW / MINI / Mazda, or an independent seller of those makes.
 - Where inventory data comes from (CMS, manual entry, external feed) and how often it updates.
 - Whether financing, trade-in valuation, or online reservation/deposit flows exist.
 - Pricing currency (USD vs UYU) and whether prices are shown at all vs "consultar".
@@ -59,7 +59,7 @@ Explicitly undecided (do not fabricate):
 - Name: **Gonzalo Villasuso** (legal name: Automotora Gonzalo Villasuso).
 - Location: Av. Roosevelt Parada 8, Punta del Este.
 - Contact: WhatsApp/phone `+598 94 438 600` (local display `094 438 600`), email `automotoragvillasuso@gmail.com`.
-- Brands carried: BMW, Land Rover, Jaguar, MINI.
+- Brands carried: BMW, MINI, Mazda.
 - **Colour direction (binding, owner-supplied):** black, white, and the three official BMW M colors — Funky Red `#E7222E`, Azure Palace `#16588E`, and Glossy Light Blue `#81C4FF`. Red is the sole action color (CTAs, active states, badges); the two blues cover information/selection (location text, focus rings) and appear together with red only in the nav's signature M-stripe. See DESIGN.md for the full token mapping.
 - **Positioning of the look:** the BMW M palette signals leaning into the M-performance/motorsport identity rather than the previous all-makes "honest commuter stock" framing — a real, if implicit, positioning signal from the owner. Copy claims (guarantees, "authorized dealer," years in business) remain **undecided** and must not be invented from the color choice alone.
 - **Logo:** not yet supplied by the owner. The site currently uses a plain "GV" text/monogram placeholder (`components/brand-mark.tsx`) — replace it with a real logo file once received; don't treat the placeholder as final branding.

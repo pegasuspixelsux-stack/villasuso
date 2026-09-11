@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: "%s | Gonzalo Villasuso",
   },
   description:
-    "Automotora Gonzalo Villasuso en Av. Roosevelt Parada 8, Punta del Este. Compra y venta de vehículos seleccionados BMW, Land Rover, Jaguar y MINI.",
+    "Automotora Gonzalo Villasuso en Av. Roosevelt Parada 8, Punta del Este. Compra y venta de vehículos seleccionados BMW, MINI y Mazda.",
   openGraph: {
     title: "Gonzalo Villasuso | Automotora",
     description:
