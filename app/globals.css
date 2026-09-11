@@ -2,25 +2,33 @@
 
 /*
   Gonzalo Villasuso — soft premium surface system.
-  Matte charcoal ground; cards float on diffused shadows, not borders.
-  Inter throughout, tight tracking, generous air. One automotive red.
+  Black ground; cards float on diffused shadows, not borders.
+  Inter throughout, tight tracking, generous air.
+  Palette: black, white, and the three BMW M colors — Funky Red (action),
+  Azure Palace + Glossy Light Blue (info, selection, and the nav's M-stripe).
 */
 
 @theme {
-  --color-ground: #0a0a0b;
-  --color-surface: #161618;
-  --color-surface-2: #1e1e22;
-  --color-surface-hi: #26262b;
+  --color-ground: #000000;
+  --color-surface: #0c1420;
+  --color-surface-2: #121c2b;
+  --color-surface-hi: #1a2738;
 
-  --color-ink: #f5f5f7;
-  --color-ink-dim: #a8a8b2;
-  --color-ink-faint: #8a8a94;
+  --color-ink: #ffffff;
+  --color-ink-dim: #a7b3c2;
+  --color-ink-faint: #838fa0;
 
-  --color-hairline: rgba(255, 255, 255, 0.07);
+  --color-hairline: rgba(255, 255, 255, 0.08);
 
-  --color-red: #dc2626;
-  --color-red-hi: #ef4444;
-  --color-red-deep: #7f1d1d;
+  /* BMW M — Funky Red: the single action color (buttons, active states, status dots) */
+  --color-red: #e7222e;
+  --color-red-hi: #ec4e58;
+  --color-red-deep: #8b141c;
+
+  /* BMW M — Azure Palace / Glossy Light Blue: info, selection & focus, never a CTA */
+  --color-blue: #16588e;
+  --color-blue-hi: #81c4ff;
+  --color-blue-deep: #0a3355;
 
   --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI",
     system-ui, sans-serif;
@@ -73,19 +81,19 @@ body {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #2c2c31;
+  background: #223047;
   border: 3px solid var(--color-ground);
   border-radius: 999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #3a3a41;
+  background: #2e4160;
 }
 * {
-  scrollbar-color: #2c2c31 transparent;
+  scrollbar-color: #223047 transparent;
 }
 
 :focus-visible {
-  outline: 2px solid var(--color-red-hi);
+  outline: 2px solid var(--color-blue-hi);
   outline-offset: 3px;
   border-radius: 4px;
 }
@@ -106,12 +114,12 @@ input[type="range"] {
 input[type="range"]::-webkit-slider-runnable-track {
   height: 6px;
   border-radius: 999px;
-  background: #2a2a30;
+  background: #1e2c3f;
 }
 input[type="range"]::-moz-range-track {
   height: 6px;
   border-radius: 999px;
-  background: #2a2a30;
+  background: #1e2c3f;
 }
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;

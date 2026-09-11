@@ -13,10 +13,10 @@ export function Nav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-hairline bg-ground/70 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 bg-ground/70 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-[1320px] items-center justify-between px-5 sm:px-8">
         <Link href="/#top" aria-label="Gonzalo Villasuso — inicio">
-          <Wordmark height={19} priority />
+          <Wordmark height={19} priority full />
         </Link>
 
         <nav className="hidden items-center gap-9 md:flex">
@@ -55,6 +55,12 @@ export function Nav() {
           </button>
         </div>
       </div>
+
+      {/* BMW M signature stripe — Glossy Light Blue · Azure Palace · Funky Red */}
+      <div
+        aria-hidden="true"
+        className="h-[3px] w-full bg-[linear-gradient(to_right,var(--color-blue-hi)_0_33.33%,var(--color-blue)_33.33%_66.66%,var(--color-red)_66.66%_100%)]"
+      />
 
       {open && (
         <nav className="border-t border-hairline bg-ground px-4 py-2 md:hidden">

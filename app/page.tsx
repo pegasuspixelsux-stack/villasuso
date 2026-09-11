@@ -103,7 +103,7 @@ function Hero() {
       </div>
 
       <div className="mx-auto max-w-[1320px] px-5 pb-28 pt-36 sm:px-8 sm:pb-40 sm:pt-48">
-        <div className="mb-6 inline-flex items-center gap-2 text-[13px] font-semibold text-yellow-400 [text-shadow:0_1px_10px_rgba(0,0,0,0.6)]">
+        <div className="mb-6 inline-flex items-center gap-2 text-[13px] font-semibold text-blue-hi [text-shadow:0_1px_10px_rgba(0,0,0,0.6)]">
           <MapPin className="size-3.5 shrink-0" />
           {SITE.address}
         </div>
@@ -842,7 +842,7 @@ function Dealership() {
           />
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-black/5 to-transparent" />
           <div className="absolute bottom-0 left-0 p-7 sm:p-10">
-            <div className="inline-flex items-center gap-2 text-[13px] font-semibold text-yellow-400 [text-shadow:0_1px_10px_rgba(0,0,0,0.6)]">
+            <div className="inline-flex items-center gap-2 text-[13px] font-semibold text-blue-hi [text-shadow:0_1px_10px_rgba(0,0,0,0.6)]">
               <MapPin className="size-3.5 shrink-0" />
               {SITE.address}
             </div>

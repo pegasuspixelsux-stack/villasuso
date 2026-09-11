@@ -2,9 +2,9 @@
 
 <!-- impeccable:design-schema 1 -->
 
-Soft premium surface system for the Gonzalo Villasuso marketplace. Matte charcoal ground;
+Soft premium surface system for the Gonzalo Villasuso marketplace. Black ground;
 cards and panels float on diffused shadows rather than borders. Inter throughout,
-tight tracking, generous air. One automotive red.
+tight tracking, generous air. Palette: black, white, and the three BMW M colors.
 
 ## Foundations
 
@@ -20,20 +20,35 @@ Tokens live in `app/globals.css` under `@theme` (`--color-*`).
 
 | Token | Value | Role |
 |---|---|---|
-| `ground` | `#0a0a0b` | page background |
-| `surface` | `#161618` | cards, panels, nav |
-| `surface-2` | `#1e1e22` | nested surface (inputs, inner cards) |
-| `surface-hi` | `#26262b` | hover / focus fill |
-| `ink` | `#f5f5f7` | primary text |
-| `ink-dim` | `#a8a8b2` | secondary text |
-| `ink-faint` | `#8a8a94` | tertiary text, labels, disclaimers |
-| `hairline` | `rgba(255,255,255,.07)` | the only borders — nav + footer rules |
-| `red` | `#dc2626` | primary action, active state |
-| `red-hi` | `#ef4444` | hover, and the large accent numerals / accent words |
+| `ground` | `#000000` | page background — true black |
+| `surface` | `#0c1420` | cards, panels, nav — black tinted toward Azure Palace for cohesion with the blue accent |
+| `surface-2` | `#121c2b` | nested surface (inputs, inner cards) |
+| `surface-hi` | `#1a2738` | hover / focus fill |
+| `ink` | `#ffffff` | primary text — true white |
+| `ink-dim` | `#a7b3c2` | secondary text |
+| `ink-faint` | `#838fa0` | tertiary text, labels, disclaimers |
+| `hairline` | `rgba(255,255,255,.08)` | the only borders — footer rules (nav uses the M-stripe instead, see below) |
+| `red` | `#e7222e` | BMW M "Funky Red" — the action color |
+| `red-hi` | `#ec4e58` | hover, and the large accent numerals / accent words |
+| `red-deep` | `#8b141c` | darkest red, for tinted badges/overlays |
+| `blue` | `#16588e` | BMW M "Azure Palace" — info/selection fills, never a CTA |
+| `blue-hi` | `#81c4ff` | BMW M "Glossy Light Blue" — info/link text, focus rings, selection rings |
+| `blue-deep` | `#0a3355` | darkest blue, for tinted panels |
 
-Red is the single accent: primary buttons, the active tab/filter/page pill, the
-"recién ingresado" dot, the large payment figure, and the one red phrase in the
-hero headline. Never decorative.
+Black, white, and the three official BMW M colors are the whole palette — no other
+hues. Two accents, two jobs, kept strictly apart:
+
+- **Red = action.** Primary buttons, the active tab/filter/page pill, the "recién
+  ingresado" dot, the large payment figure, and the one red phrase in the hero
+  headline. Never used for anything the visitor isn't meant to act on.
+- **Blue = information, not action.** The location/address badges (hero and
+  dealership photo), the gallery's selected-thumbnail ring, and the global
+  `:focus-visible` outline all use `blue-hi`. `blue` (the deeper Azure Palace)
+  is reserved for fills/surfaces, not small text on black — it fails contrast
+  there.
+- **The M-stripe** — a 3px hard-edged tri-band (`blue-hi` · `blue` · `red`, BMW's
+  own stripe order) replaces the nav's bottom hairline. It is the one place all
+  three brand colors appear together; don't repeat that combination elsewhere.
 
 ## Type
 
@@ -79,8 +94,9 @@ hero headline. Never decorative.
 
 ## Components
 
-- `RSMark` — owner logo (`public/images/rs_logo.png` red / `rs_logo_white.png`);
-  `Wordmark` pairs it with a tracked "MOTORS".
+- `BrandMark` — placeholder "GV" monogram badge (text, not an image) pending a
+  real logo file from the owner; `Wordmark` pairs it with tracked "VILLASUSO"
+  (or the full "GONZALO VILLASUSO" in the nav).
 - `VehicleCard` — photo (4:3, status pill overlay) + body: title (min 2 lines) ·
   spec line · **cuota `/mes`** (primary) · price (secondary) · finance disclaimer ·
   red "Consultar" pill → prefilled WhatsApp · faint ID/ingreso/ubicación line.

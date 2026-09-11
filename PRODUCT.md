@@ -60,8 +60,8 @@ Explicitly undecided (do not fabricate):
 - Location: Av. Roosevelt Parada 8, Punta del Este.
 - Contact: WhatsApp/phone `+598 94 438 600` (local display `094 438 600`), email `automotoragvillasuso@gmail.com`.
 - Brands carried: BMW, Land Rover, Jaguar, MINI.
-- **Colour direction (binding, carried over from the previous brand):** a high-contrast dark foundation (deep charcoal / near-black) paired with a bold automotive red accent — crimson, around `#DC2626` — reserved for CTAs, badges, and active states. Revisit if the owner wants a distinct palette for the new brand.
-- **Positioning of the look:** **undecided following the rebrand.** The previous direction assumed an all-makes, everyday-stock inventory ("exclusive-showroom look, honest commuter stock, not luxury cosplay"); that assumption no longer holds now that inventory is curated to BMW/Land Rover/Jaguar/MINI. Whether the look should lean more upscale is a call for the owner, not to be invented here.
+- **Colour direction (binding, owner-supplied):** black, white, and the three official BMW M colors — Funky Red `#E7222E`, Azure Palace `#16588E`, and Glossy Light Blue `#81C4FF`. Red is the sole action color (CTAs, active states, badges); the two blues cover information/selection (location text, focus rings) and appear together with red only in the nav's signature M-stripe. See DESIGN.md for the full token mapping.
+- **Positioning of the look:** the BMW M palette signals leaning into the M-performance/motorsport identity rather than the previous all-makes "honest commuter stock" framing — a real, if implicit, positioning signal from the owner. Copy claims (guarantees, "authorized dealer," years in business) remain **undecided** and must not be invented from the color choice alone.
 - **Logo:** not yet supplied by the owner. The site currently uses a plain "GV" text/monogram placeholder (`components/brand-mark.tsx`) — replace it with a real logo file once received; don't treat the placeholder as final branding.
 - Brand voice: direct and plain-spoken, Uruguayan Spanish. No superlatives, no invented awards. "Precio sin vueltas" over "no-bullshit".
 

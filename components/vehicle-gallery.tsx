@@ -75,7 +75,7 @@ export function VehicleGallery({
               aria-label={`Ver foto ${i + 1}`}
               aria-current={i === index}
               className={
-                "relative h-16 w-24 shrink-0 overflow-hidden rounded-2xl outline-2 outline-offset-2 outline-red-hi transition-[opacity,outline-width] " +
+                "relative h-16 w-24 shrink-0 overflow-hidden rounded-2xl outline-2 outline-offset-2 outline-blue-hi transition-[opacity,outline-width] " +
                 (i === index ? "outline" : "opacity-60 hover:opacity-100")
               }
             >
