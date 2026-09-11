@@ -1,4 +1,4 @@
-# RS Motors — plantilla de Instagram (feed)
+# Gonzalo Villasuso — plantilla de Instagram (feed)
 
 Reusable blueprint for posting **one vehicle per graphic**. A live reference
 implementation renders at `/plantilla-instagram`.
@@ -42,8 +42,8 @@ Precio: {US$ precio}  |  Permuta y financiación
 
 100% inspeccionado antes de publicar.
 Escribinos por WhatsApp 👉 {link}
-Ref. {ID} · Maldonado
-#autosusados #maldonado #puntadeleste #{marca}{modelo}
+Ref. {ID} · Punta del Este
+#autosusados #puntadeleste #{marca}{modelo}
 ```
 
 ## Producing a post

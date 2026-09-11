@@ -9,9 +9,19 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "RS Motors — Autos usados en Maldonado",
+  title: {
+    default: "Gonzalo Villasuso | Automotora en Punta del Este",
+    template: "%s | Gonzalo Villasuso",
+  },
   description:
-    "Inventario de autos usados en Maldonado y Punta del Este. Estándar de exigencia, autos de todos los días. Consultá por WhatsApp.",
+    "Automotora Gonzalo Villasuso en Av. Roosevelt Parada 8, Punta del Este. Compra y venta de vehículos seleccionados BMW, Land Rover, Jaguar y MINI.",
+  openGraph: {
+    title: "Gonzalo Villasuso | Automotora",
+    description:
+      "Vehículos exclusivos en Av. Roosevelt Parada 8, Punta del Este.",
+    siteName: "Gonzalo Villasuso",
+    url: "https://gonzalovillasuso.com",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { watermarkImage } from "@/lib/watermark";
 
 /**
- * Listing-photo watermarking endpoint. Applies the RS Motors mark (see
+ * Listing-photo watermarking endpoint. Applies the dealership mark (see
  * lib/watermark.ts) to an incoming photo and hands the watermarked bytes
  * straight back — it doesn't persist anything itself. The caller (the
  * admin's AddInventoryModal) uploads those bytes to Firebase Storage via

@@ -6,4 +6,4 @@
  * app/admin/page.tsx and lib/users-store.ts importing each other. The
  * password lives only in Firebase Auth — nothing here knows it.
  */
-export const DEMO_EMAIL = "admin@rsmotors.uy";
+export const DEMO_EMAIL = "admin@villasuso.uy";

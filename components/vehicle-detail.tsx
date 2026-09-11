@@ -181,7 +181,7 @@ export function VehicleDetail({ vehicle }: { vehicle: Vehicle }) {
 
           <WhatsappCaptureButton
             buildMessage={(name, phone) =>
-              `Hola RS Motors, mi nombre es ${name} (Tel: ${phone}) y quiero consultar por el ${title} ${vehicle.version} ${vehicle.anio} (${vehicle.id}). ¿Sigue disponible?`
+              `Hola Gonzalo Villasuso, mi nombre es ${name} (Tel: ${phone}) y quiero consultar por el ${title} ${vehicle.version} ${vehicle.anio} (${vehicle.id}). ¿Sigue disponible?`
             }
             context={`sobre el ${title}`}
             source={`Ficha de vehículo — ${title}`}
@@ -210,7 +210,7 @@ function ContactForm({ vehicle, title }: { vehicle: Vehicle; title: string }) {
   const [form, setForm] = useState({ nombre: "", contacto: "", mensaje: "" });
 
   const message = [
-    `Hola RS Motors, soy ${form.nombre || "(sin nombre)"}.`,
+    `Hola Gonzalo Villasuso, soy ${form.nombre || "(sin nombre)"}.`,
     `Me interesa el ${title} ${vehicle.version} ${vehicle.anio} (${vehicle.id}).`,
     form.mensaje || "",
     form.contacto ? `Me podés contactar en ${form.contacto}.` : "",

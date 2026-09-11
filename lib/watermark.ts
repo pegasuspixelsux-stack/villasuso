@@ -2,10 +2,14 @@ import sharp from "sharp";
 import path from "node:path";
 
 /**
- * Applies the RS Motors mark as a faint, centered watermark to a listing
+ * Applies the dealership mark as a faint, centered watermark to a listing
  * photo buffer. Runs server-side (Node runtime — sharp is a native module,
  * not available on Edge) as part of the upload pipeline, before the file is
  * written to storage.
+ *
+ * TODO: rs-logo-transparent.png is still the old RS Motors mark — replace it
+ * with a real Gonzalo Villasuso transparent PNG before this goes live, or
+ * every watermarked photo will carry the wrong dealer's mark.
  */
 
 const WATERMARK_PATH = path.join(

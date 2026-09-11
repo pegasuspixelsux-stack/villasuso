@@ -24,9 +24,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const vehicle = await findVehicle(slug);
-  if (!vehicle) return { title: "Unidad no encontrada — RS Motors" };
+  if (!vehicle) return { title: "Unidad no encontrada — Gonzalo Villasuso" };
 
-  const title = `${vehicle.marca} ${vehicle.modelo} ${vehicle.anio} — RS Motors`;
+  const title = `${vehicle.marca} ${vehicle.modelo} ${vehicle.anio} — Gonzalo Villasuso`;
   return {
     title,
     description: `${vehicle.marca} ${vehicle.modelo} ${vehicle.version} · ${vehicle.anio} · ${fmtInt(vehicle.km)} km · ${fmtUSD(vehicle.precioUSD)}. Consultá disponibilidad por WhatsApp.`,

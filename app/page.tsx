@@ -112,7 +112,7 @@ function Hero() {
           <span className="text-red-hi">Todos los días.</span>
         </h1>
         <p className="mt-7 max-w-[50ch] text-[17px] leading-relaxed text-ink-dim [text-shadow:0_1px_12px_rgba(0,0,0,0.7)] sm:text-[19px]">
-          Una selección exclusiva de usados en Maldonado. Cada unidad elegida y
+          Una selección exclusiva de usados en Punta del Este. Cada unidad elegida y
           revisada punto por punto, con kilómetros reales y precio sin vueltas.
         </p>
 
@@ -528,7 +528,7 @@ function Tools() {
 
   const [trade, setTrade] = useState({ marca: "", modelo: "", anio: "", km: "" });
   const tradeReady = Boolean(trade.marca && trade.modelo && trade.anio);
-  const tradeMessage = `Hola RS Motors, quiero tasar mi usado para permuta:\n· Marca: ${trade.marca}\n· Modelo: ${trade.modelo}\n· Año: ${trade.anio}\n· Km: ${trade.km || "s/d"}`;
+  const tradeMessage = `Hola Gonzalo Villasuso, quiero tasar mi usado para permuta:\n· Marca: ${trade.marca}\n· Modelo: ${trade.modelo}\n· Año: ${trade.anio}\n· Km: ${trade.km || "s/d"}`;
 
   const [precio, setPrecio] = useState<number>(18000);
   const [entrega, setEntrega] = useState<number>(
@@ -542,7 +542,7 @@ function Tools() {
   const cuota =
     financiado === 0 ? 0 : (financiado * r) / (1 - Math.pow(1 + r, -plazo));
   const totalPagar = entrega + cuota * plazo;
-  const financeMessage = `Hola RS Motors, quiero consultar financiación:\n· Precio: ${fmtUSD(precio)}\n· Entrega: ${fmtUSD(entrega)}\n· Plazo: ${plazo} meses\n· TNA: ${tna.toFixed(2)}%\n· Cuota estimada: ${fmtUSD(cuota)}`;
+  const financeMessage = `Hola Gonzalo Villasuso, quiero consultar financiación:\n· Precio: ${fmtUSD(precio)}\n· Entrega: ${fmtUSD(entrega)}\n· Plazo: ${plazo} meses\n· TNA: ${tna.toFixed(2)}%\n· Cuota estimada: ${fmtUSD(cuota)}`;
 
   return (
     <section
@@ -708,7 +708,7 @@ function Tools() {
 
                   <WhatsappCaptureButton
                     buildMessage={(name, phone) =>
-                      `Hola RS Motors, mi nombre es ${name} (Tel: ${phone}). ${financeMessage}`
+                      `Hola Gonzalo Villasuso, mi nombre es ${name} (Tel: ${phone}). ${financeMessage}`
                     }
                     context="sobre financiación"
                     source="Calculadora de financiación"
@@ -799,7 +799,7 @@ function Tools() {
                 </div>
                 <WhatsappCaptureButton
                   buildMessage={(name, phone) =>
-                    `Hola RS Motors, mi nombre es ${name} (Tel: ${phone}). ${tradeMessage}`
+                    `Hola Gonzalo Villasuso, mi nombre es ${name} (Tel: ${phone}). ${tradeMessage}`
                   }
                   context="sobre una tasación de permuta"
                   source="Formulario de permuta"
@@ -817,9 +817,11 @@ function Tools() {
 }
 
 /* ------------------------------------------------------------------ *
- *  Dealership — boxed static photo of the real RS Motors location.
+ *  Dealership — boxed static photo of the real Gonzalo Villasuso location.
  *  Drop the photo at public/images/dealer.jpg (any size — it's cropped to
  *  fill the box via object-cover) and it appears here automatically.
+ *  TODO: dealer.jpg currently still shows the previous location — swap in a
+ *  real photo of the Av. Roosevelt Parada 8 site.
  * ------------------------------------------------------------------ */
 function Dealership() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -833,7 +835,7 @@ function Dealership() {
         <div className="relative h-[75vh] overflow-hidden rounded-[32px] shadow-float">
           <Image
             src="/images/dealer.jpg"
-            alt="Local de RS Motors en Maldonado"
+            alt="Local de Gonzalo Villasuso en Punta del Este"
             fill
             sizes="(max-width: 1320px) 100vw, 1320px"
             className="object-cover"
@@ -845,7 +847,7 @@ function Dealership() {
               {SITE.address}
             </div>
             <p className="mt-2 max-w-[38ch] text-[clamp(1.6rem,3vw,2.4rem)] font-semibold leading-[1.1] tracking-[-0.02em] text-white [text-shadow:0_2px_20px_rgba(0,0,0,0.5)]">
-              Nuestro local en Maldonado
+              Nuestro local en Punta del Este
             </p>
           </div>
         </div>
@@ -892,7 +894,7 @@ function About() {
         <div className="mt-14 grid gap-14 lg:grid-cols-2 lg:items-center lg:gap-20">
           <div>
             <p className="max-w-[52ch] text-[16px] leading-relaxed text-ink-dim">
-              Una selección exclusiva y rigurosa en Maldonado. Elegimos cada
+              Una selección exclusiva y rigurosa en Punta del Este. Elegimos cada
               unidad bajo estrictos estándares de calidad, exhibiendo cada
               detalle con total transparencia para que encuentre el vehículo
               ideal en un entorno sin distracciones. Lo publicado corresponde a
@@ -959,7 +961,7 @@ function Contact() {
   const [form, setForm] = useState({ nombre: "", contacto: "", mensaje: "" });
 
   const message = [
-    `Hola RS Motors, soy ${form.nombre || "(sin nombre)"}.`,
+    `Hola Gonzalo Villasuso, soy ${form.nombre || "(sin nombre)"}.`,
     form.mensaje || "Quería hacer una consulta.",
     form.contacto ? `Me podés contactar en ${form.contacto}.` : "",
   ]
@@ -984,7 +986,7 @@ function Contact() {
             Visite nuestro local
           </h2>
           <p className="mt-4 max-w-[46ch] text-[16px] leading-relaxed text-ink-dim sm:text-[17px]">
-            Lo invitamos a visitarnos en nuestro local en Maldonado para conocer
+            Lo invitamos a visitarnos en nuestro local en Punta del Este para conocer
             y probar las unidades sin apuro, o bien a comunicarse con nosotros a
             través de WhatsApp para una respuesta ágil y personalizada.
           </p>

@@ -11,7 +11,7 @@ export function Footer() {
         <div className="flex flex-col items-center gap-3 sm:flex-row">
           <Wordmark height={15} />
           <span className="tnum text-[12px] text-ink-faint">
-            © {new Date().getFullYear()} · Maldonado, Uruguay
+            © {new Date().getFullYear()} · Punta del Este, Uruguay
           </span>
         </div>
         <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">

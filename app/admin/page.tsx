@@ -121,10 +121,10 @@ export default function AdminPage() {
 
           <div className="mt-auto flex flex-col gap-1">
             <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-ink-faint">
-              RS Motors · Enterprise
+              Gonzalo Villasuso · Enterprise
             </span>
             <span className="tnum text-[11px] text-ink-faint">
-              Versión 1.0 · © {new Date().getFullYear()} RS Motors · by
+              Versión 1.0 · © {new Date().getFullYear()} Gonzalo Villasuso · by
               Pegasus Pixels
             </span>
           </div>
@@ -146,7 +146,7 @@ export default function AdminPage() {
               Iniciar sesión
             </h2>
             <p className="mt-2 text-[13px] text-ink-faint">
-              Acceso interno para el equipo de RS Motors.
+              Acceso interno para el equipo de Gonzalo Villasuso.
             </p>
 
             <form
@@ -209,7 +209,7 @@ export default function AdminPage() {
 
             <p className="mt-6 text-center text-[11px] leading-relaxed text-ink-faint">
               Acceso real vía Firebase Authentication — iniciá sesión con tu
-              cuenta de RS Motors (ej. {DEMO_EMAIL}).
+              cuenta de Gonzalo Villasuso (ej. {DEMO_EMAIL}).
             </p>
           </div>
         </div>

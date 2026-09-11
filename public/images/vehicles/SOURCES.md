@@ -2,7 +2,7 @@
 
 **Demonstration inventory only.** Illustrative stock photos from Unsplash
 (unsplash.com/license — free to use, no attribution required). They do **not**
-depict RS Motors' actual stock. Replace every file with real lot photography
+depict Gonzalo Villasuso's actual stock. Replace every file with real lot photography
 before launch; keep the same filenames and the app needs no changes.
 
 | file | Unsplash photo id |

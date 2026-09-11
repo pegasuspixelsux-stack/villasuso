@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { RSMark } from "@/components/rs-mark";
+import { BrandMark } from "@/components/brand-mark";
 import { getInventory, STATUS_LABEL } from "@/lib/inventory";
 import type { Vehicle, VehicleStatus } from "@/lib/inventory";
 
@@ -51,9 +51,9 @@ function PostFrame({ vehicle }: { vehicle: Vehicle }) {
       </div>
 
       <div className="absolute inset-x-0 top-0 flex items-center justify-between px-16 py-16">
-        <RSMark height={46} tone="red" />
+        <BrandMark height={46} />
         <span className="text-[24px] font-medium tracking-[0.02em] text-ink-dim">
-          Maldonado
+          Punta del Este
         </span>
       </div>
 
@@ -93,7 +93,7 @@ export default function InstagramTemplatePage() {
           href="/"
           className="text-[13px] font-medium text-ink-faint transition-colors hover:text-ink"
         >
-          ← RS Motors
+          ← Gonzalo Villasuso
         </Link>
         <h1 className="mt-4 text-[clamp(2rem,4vw,3rem)] font-semibold tracking-[-0.03em] text-ink">
           Plantilla de Instagram

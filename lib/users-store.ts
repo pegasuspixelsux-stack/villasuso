@@ -62,7 +62,7 @@ export async function getMembers(): Promise<Member[]> {
       SALESMEN.map((name) =>
         setDoc(doc(db, COLLECTION, name.toLowerCase().replace(/\s+/g, "-")), {
           name,
-          email: `${name.toLowerCase().split(" ")[0]}@rsmotors.uy`,
+          email: `${name.toLowerCase().split(" ")[0]}@villasuso.uy`,
           role: "Asesor de ventas",
           status: "Activo",
         }),

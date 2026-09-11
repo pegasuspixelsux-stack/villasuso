@@ -2,7 +2,7 @@
 
 <!-- impeccable:design-schema 1 -->
 
-Soft premium surface system for the RS Motors marketplace. Matte charcoal ground;
+Soft premium surface system for the Gonzalo Villasuso marketplace. Matte charcoal ground;
 cards and panels float on diffused shadows rather than borders. Inter throughout,
 tight tracking, generous air. One automotive red.
 
@@ -98,8 +98,7 @@ hero headline. Never decorative.
   illustrative stock (see `SOURCES.md`) — replace before launch.
 - `lib/finance.ts` — cuota = 30% down · 60 months · TNA 6.97% (illustrative;
   every quote "sujeto a aprobación crediticia").
-- `lib/site.ts` — contact config. Address is real
-  (Ave. Joaquín de Viana y Román Bergalli, Maldonado); phone number and hours are
-  placeholders pending the owner.
+- `lib/site.ts` — contact config. Address is real (Av. Roosevelt Parada 8,
+  Punta del Este); opening hours are still a placeholder pending the owner.
 - Instagram feed-post template: `/plantilla-instagram` + `INSTAGRAM_TEMPLATE.md`
   (1080×1350; on-graphic copy limited to marca / modelo / año / estado).

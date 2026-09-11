@@ -15,7 +15,7 @@ export function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-hairline bg-ground/70 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-[1320px] items-center justify-between px-5 sm:px-8">
-        <Link href="/#top" aria-label="RS Motors — inicio">
+        <Link href="/#top" aria-label="Gonzalo Villasuso — inicio">
           <Wordmark height={19} priority />
         </Link>
 
@@ -38,7 +38,7 @@ export function Nav() {
           />
           <WhatsappCaptureButton
             buildMessage={(name, phone) =>
-              `Hola RS Motors, mi nombre es ${name} (Tel: ${phone}) y quería hacer una consulta.`
+              `Hola Gonzalo Villasuso, mi nombre es ${name} (Tel: ${phone}) y quería hacer una consulta.`
             }
             source="Nav"
             buttonLabel="WhatsApp"

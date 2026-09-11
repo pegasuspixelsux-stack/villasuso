@@ -303,7 +303,7 @@ export function UsersPanel() {
                   onChange={(e) =>
                     setInvite({ ...invite, email: e.target.value })
                   }
-                  placeholder="nombre@rsmotors.uy"
+                  placeholder="nombre@villasuso.uy"
                   className={field + " mt-1.5"}
                 />
               </label>

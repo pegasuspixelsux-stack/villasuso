@@ -210,7 +210,7 @@ export function SalesAgentWidget() {
 
         <div className="flex flex-col gap-4 overflow-y-auto bg-neutral-50 p-5">
           <AgentTurn>
-            ¡Hola! Bienvenido a RS Motors. Estoy acá para ayudarte a encontrar
+            ¡Hola! Bienvenido a Gonzalo Villasuso. Estoy acá para ayudarte a encontrar
             exactamente lo que buscás. ¿Qué tipo de vehículo te interesa?
           </AgentTurn>
 
@@ -373,7 +373,7 @@ export function SalesAgentWidget() {
         </div>
 
         <div className="border-t border-neutral-100 bg-neutral-50 px-3 py-2.5 text-center text-[11px] text-neutral-400">
-          RS Motors · Asesor de compra automatizado
+          Gonzalo Villasuso · Asesor de compra automatizado
         </div>
       </div>
     </div>

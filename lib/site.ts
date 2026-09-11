@@ -3,26 +3,29 @@
  * real ones before launch — see the `TODO` markers.
  */
 export const SITE = {
-  name: "RS Motors",
-  city: "Maldonado",
-  region: "Maldonado · Punta del Este",
-  tagline: "Estándar de exigencia. Autos de todos los días.",
+  name: "Gonzalo Villasuso",
+  legalName: "Automotora Gonzalo Villasuso",
+  city: "Punta del Este",
+  region: "Punta del Este, Uruguay",
+  tagline: "Vehículos seleccionados BMW, Land Rover, Jaguar y MINI.",
 
-  // TODO: real dealership WhatsApp line (international format, no +).
-  whatsappNumber: "59894000000",
-  phoneDisplay: "094 000 000",
+  brands: ["BMW", "Land Rover", "Jaguar", "MINI"] as string[],
 
-  address: "Ave. Joaquín de Viana y Román Bergalli, Maldonado",
+  whatsappNumber: "59894438600",
+  phoneDisplay: "094 438 600",
+  phoneInternational: "+598 94 438 600",
+  email: "automotoragvillasuso@gmail.com",
+
+  address: "Av. Roosevelt Parada 8, Punta del Este",
   // TODO: confirm opening hours.
   hours: "Lun–Vie 9–19 · Sáb 9–13",
-  mapsQuery: "Joaquín de Viana y Román Bergalli, Maldonado, Uruguay",
+  mapsQuery: "Av. Roosevelt Parada 8, Punta del Este, Uruguay",
 
-  instagramHandle: "rsmotors.uy",
-  instagramUrl: "https://instagram.com/rsmotors.uy",
-
-  // TODO: confirm real Facebook page and TikTok account.
-  facebookUrl: "https://facebook.com/rsmotors.uy",
-  tiktokUrl: "https://tiktok.com/@rsmotors.uy",
+  // TODO: confirm real Instagram, Facebook and TikTok accounts.
+  instagramHandle: "gonzalovillasuso",
+  instagramUrl: "https://instagram.com/gonzalovillasuso",
+  facebookUrl: "https://facebook.com/gonzalovillasuso",
+  tiktokUrl: "https://tiktok.com/@gonzalovillasuso",
 } as const;
 
 export function waLink(message: string, number: string = SITE.whatsappNumber) {

@@ -32,7 +32,7 @@ function toVehicle(id: string, data: Record<string, unknown>): Vehicle {
     puertas: (data.puertas as number) ?? 4,
     status: (data.status as Vehicle["status"]) ?? "disponible",
     ingreso: (data.ingreso as string) ?? new Date().toISOString().slice(0, 10),
-    ubicacion: (data.ubicacion as string) ?? "Maldonado",
+    ubicacion: (data.ubicacion as string) ?? "Punta del Este",
     inspeccionado: Boolean(data.inspeccionado),
     imagen: (data.imagen as string) ?? "",
     destacado: Boolean(data.destacado),
