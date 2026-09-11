@@ -22,7 +22,7 @@ export function VehicleGallery({
     setIndex((i) => (i + delta + photos.length) % photos.length);
 
   return (
-    <div className="mx-auto max-w-[1320px] px-5 pt-8 sm:px-8">
+    <div className="mx-auto max-w-[1320px] px-5 sm:px-8">
       <div className="relative aspect-square overflow-hidden rounded-[28px] bg-ground sm:aspect-[16/9]">
         {photos.map((src, i) => (
           <Image

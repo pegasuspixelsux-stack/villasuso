@@ -16,7 +16,12 @@ export function Nav() {
     <header className="sticky top-0 z-50 bg-ground/70 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-[1320px] items-center justify-between px-5 sm:px-8">
         <Link href="/#top" aria-label="Gonzalo Villasuso — inicio">
-          <Wordmark height={19} priority full />
+          <span className="sm:hidden">
+            <Wordmark height={28} priority full />
+          </span>
+          <span className="hidden sm:block">
+            <Wordmark height={38} priority full />
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-9 md:flex">

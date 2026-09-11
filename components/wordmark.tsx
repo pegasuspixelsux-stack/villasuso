@@ -18,14 +18,14 @@ export function Wordmark({
       <BrandMark height={height} />
       {full ? (
         <span
-          className="whitespace-nowrap font-semibold tracking-[0.08em] text-ink"
+          className="whitespace-nowrap font-bold tracking-[0.08em] text-ink"
           style={{ fontSize: height * 0.5 }}
         >
           <span className="hidden sm:inline">GONZALO </span>VILLASUSO
         </span>
       ) : (
         <span
-          className="font-semibold tracking-[0.14em] text-ink"
+          className="font-bold tracking-[0.14em] text-ink"
           style={{ fontSize: height * 0.62 }}
         >
           VILLASUSO

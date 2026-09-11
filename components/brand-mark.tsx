@@ -14,8 +14,10 @@ export function BrandMark({ height = 24, tone = "accent", className }: Props) {
   return (
     <span
       aria-hidden="true"
-      className={`inline-flex shrink-0 items-center justify-center rounded-full font-semibold ${
-        tone === "accent" ? "bg-red text-white" : "bg-surface-hi text-ink"
+      className={`inline-flex shrink-0 items-center justify-center rounded-full font-semibold ring-1 ${
+        tone === "accent"
+          ? "bg-black text-white ring-white/15"
+          : "bg-surface-hi text-ink ring-transparent"
       } ${className ?? ""}`}
       style={{ height, width: height, fontSize: height * 0.44, letterSpacing: "-0.02em" }}
     >

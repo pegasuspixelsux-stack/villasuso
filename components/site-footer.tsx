@@ -9,7 +9,7 @@ export function Footer() {
     <footer className="border-t border-hairline px-5 py-12 sm:px-8">
       <div className="mx-auto flex max-w-[1320px] flex-col items-center gap-6 sm:flex-row sm:justify-between">
         <div className="flex flex-col items-center gap-3 sm:flex-row">
-          <Wordmark height={15} />
+          <Wordmark height={30} full />
           <span className="tnum text-[12px] text-ink-faint">
             © {new Date().getFullYear()} · Punta del Este, Uruguay
           </span>

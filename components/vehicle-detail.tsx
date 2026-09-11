@@ -29,17 +29,19 @@ export function VehicleDetail({ vehicle }: { vehicle: Vehicle }) {
 
   return (
     <article>
-      <VehicleGallery photos={photos} alt={`${title} ${vehicle.anio}`} />
-
-      <div className="mx-auto max-w-[800px] px-5 sm:px-8">
+      <div className="mx-auto max-w-[1320px] px-5 pb-4 pt-8 sm:px-8">
         <Link
           href="/#unidades"
-          className="mt-8 inline-flex items-center gap-2 text-[14px] font-medium text-ink-dim transition-colors hover:text-ink"
+          className="inline-flex items-center gap-2 text-[14px] font-medium text-ink-dim transition-colors hover:text-ink"
         >
           <ArrowLeft className="size-4" />
           Unidades
         </Link>
+      </div>
 
+      <VehicleGallery photos={photos} alt={`${title} ${vehicle.anio}`} />
+
+      <div className="mx-auto max-w-[800px] px-5 pb-24 sm:px-8">
         {/* header */}
         <header className="mt-8 text-center">
           <div className="flex items-center justify-center gap-2.5">
