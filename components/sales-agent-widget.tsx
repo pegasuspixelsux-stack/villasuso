@@ -159,7 +159,7 @@ export function SalesAgentWidget() {
             <span className="relative inline-flex size-3 rounded-full bg-red" />
           </span>
           <span className="text-[12px] font-semibold uppercase tracking-[0.14em]">
-            Agente RS
+            Agente GV
           </span>
         </button>
       </div>
@@ -191,7 +191,7 @@ export function SalesAgentWidget() {
             </span>
             <div>
               <h3 className="text-[12px] font-semibold uppercase tracking-[0.14em] text-neutral-900">
-                Asesor virtual RS
+                Asesor virtual GV
               </h3>
               <span className="text-[11px] text-neutral-400">
                 En línea · Calificación instantánea
@@ -383,7 +383,7 @@ export function SalesAgentWidget() {
 function Avatar() {
   return (
     <div className="flex size-7 shrink-0 items-center justify-center rounded-full bg-red text-[10px] font-semibold text-white">
-      RS
+      GV
     </div>
   );
 }
