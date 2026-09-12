@@ -61,7 +61,7 @@ export function VehicleCard({
       {/* branding strip — sits below the photo so it never crops it; the
           card grows to make room instead of overlaying the image */}
       <div className="flex shrink-0 items-center justify-center bg-ground py-2.5">
-        <Wordmark height={15} />
+        <Wordmark height={15} full />
       </div>
 
       <div className="flex flex-1 flex-col p-6">

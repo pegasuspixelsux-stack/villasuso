@@ -33,10 +33,10 @@
   --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI",
     system-ui, sans-serif;
 
-  --radius-xs: 10px;
-  --radius-sm: 14px;
-  --radius-lg: 22px;
-  --radius-xl: 28px;
+  --radius-xs: 0px;
+  --radius-sm: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
 
   --shadow-soft: 0 1px 3px rgba(0, 0, 0, 0.5), 0 14px 34px -10px rgba(0, 0, 0, 0.55);
   --shadow-float: 0 2px 8px rgba(0, 0, 0, 0.5), 0 28px 60px -14px rgba(0, 0, 0, 0.62);
@@ -45,6 +45,15 @@
 
 :root {
   color-scheme: dark;
+}
+
+/* Square corners everywhere — cards, panels, buttons, pills, inputs, avatars.
+   A blanket override (rather than editing every rounded-* class) so nothing
+   — including third-party/arbitrary radius values — slips through. */
+*,
+*::before,
+*::after {
+  border-radius: 0 !important;
 }
 
 html {

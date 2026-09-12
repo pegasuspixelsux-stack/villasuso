@@ -65,7 +65,9 @@ hues. Two accents, two jobs, kept strictly apart:
 
 ## Shape & depth
 
-- Radius: cards `22px`, big panels `28–32px`, inputs / small controls `14–16px`, pills `999px`
+- Radius: `0px` everywhere — cards, panels, inputs, buttons/pills, avatars. Enforced
+  by a blanket `* { border-radius: 0 !important }` in `app/globals.css` rather than
+  per-component classes, so nothing (including arbitrary radius values) slips through.
 - No structural borders. Elevation = shadow only:
   - `--shadow-pop` — subtle lift (metric cards)
   - `--shadow-soft` — standard float (vehicle cards, tool panels)
